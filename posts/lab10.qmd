@@ -1,0 +1,176 @@
+---
+title: "10 - Visualization"
+execute: 
+  warning: false
+---
+
+
+
+## Load libraries and data
+
+```{r}
+library(tidyverse)
+library(scales)
+library(skimr)
+library(plotly)
+theme_set(theme_minimal())
+```
+
+## Read the data in 
+
+- [Pupil-teacher ratios](https://ourworldindata.org/teachers-and-professors#pupil-teacher-ratios-for-primary-education-by-country)
+
+```{r}
+pupil_teacher_ratio <-  read_csv("https://bus320-quarto.netlify.app/data/pupil-teacher-ratio-for-primary-education-by-country.csv")
+```
+
+## 1. `skim` the data
+
+- Use `skim` to summarize the dataset
+
+```{r}
+
+```
+
+* Which variable(s) have missing values?
+
+
+
+## 2. Eliminate the missing values
+
+- Eliminate the rows of `pupil_teacher_ratio` that have missing values
+
+- Save the output to `pupil_teacher_ratio_no_missing`
+
+- Display `pupil_teacher_ratio_no_missing`
+
+```{r}
+
+```
+
+
+## 3. `skim` the `pupil_teacher_ratio_no_missing` data
+
+
+```{r}
+
+```
+
+* What is the mean pupil-teacher ratio for the countries in `pupil_teacher_ratio_no_missing`? 
+
+* What is the standard deviation of the pupil-teacher ratio for the countries in`pupil_teacher_ratio_no_missing`?
+
+* What is the minimum pupil-teacher ratio for the countries in `pupil_teacher_ratio_no_missing`?
+
+* What is the median pupil-teacher ratio for the countries in `pupil_teacher_ratio_no_missing`?
+
+* What is the maximum pupil-teacher ratio for the countries in `pupil_teacher_ratio_no_missing`?
+
+## 4. Count the number of observations for each `Entity` 
+
+- In `pupil_teacher_ratio_no_missing`, count the number of observations for each `Entity`
+
+
+```{r}
+
+```
+
+## 5. Randomly select 4 entities to analyze
+
+- Use `set.seed()` so your results will be replicable.  Set your seed to the length of your first name in Moodle.  For example, if your first name is "Elizabeth", set your seed to 8. 
+  
+  - set.seed(8)
+
+- Use `slice_sample()` to randomly select 4 entities from `pupil_teacher_ratio_no_missing` and save to `entities`
+
+  
+```{r}
+
+```  
+
+## 6. Display `entities`
+
+```{r}
+
+```
+
+
+## 7. Format and select the data for plotting
+
+
+- Extract only the rows for the 4 entities from `pupil_teacher_ratio_no_missing` 
+
+- Rename the last column to `pupil_teacher_ratio`
+
+- Drop the variable `Code`
+
+- Save to object `pupil_teacher_df`
+
+
+```{r}
+
+
+```
+
+## 8. Display `pupil_teacher_df`
+
+```{r}
+
+```
+
+## 9. Compute the min and max Year
+
+- Start with `pupil_teacher_df`
+
+```{r}
+
+
+```
+
+* The minimum Year is: 
+
+* The maximum Year is:
+
+## 10. Plot `Year` vs `pupil_teacher_ratio` for each entity
+
+- Use `ggplot2` to create a line plot for each entity with `Year` on the x-axis and `pupil_teacher_ratio` on the y-axis (hint: color = `Entity`)
+
+- Add points to the plot
+
+- Add a title, "Pupil-teacher ratio for primary education, min year to max year"
+
+- Add subtitle, "Average number of pupils per teacher, based on headcounts of both pupils and teachers.
+When feasible, the number of part-time teachers is converted to ‘full-time equivalent’
+teachers; so that a double-shift teacher is counted twice, etc."
+
+- Add a caption, "Source Our World in Data (https://ourworldindata.org/teachers-and-professors#pupil-teacher-ratios-for-primary-education-by-country)"
+
+- Remove the x and y axis and color labels
+
+- Save the plot to `p_pupil_teacher_df`
+
+- Display `p_pupil_teacher_df`
+
+```{r}
+
+
+```
+
+## 11. Make `p_pupil_teacher_df` interactive 
+
+* Use `ggplotly`
+
+
+```{r}
+
+
+```
+
+## 12. Add text the plot
+
+- Add a text annotation to `p_pupil_teacher_df` that describes an interesting observation about the data
+
+```{r}
+
+
+```

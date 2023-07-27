@@ -1,0 +1,109 @@
+---
+title: "7 - Exploratory analysis"
+execute: 
+  warning: false
+---
+
+
+## Work through the tutorial  [Exploring categorical data](https://openintro.shinyapps.io/ims-02-explore-01/) before attempting the lab
+
+
+## Load libraries and data
+
+```{r}
+library(tidyverse)
+library(ggmosaic) 
+```
+
+## Read the data in 
+
+```{r}
+comics  <- read_csv('https://bus320-quarto.netlify.app/data/comics.csv')
+```
+
+## 1. Use `glimpse` to examine the `comics` dataset
+
+```{r}
+
+```
+
+## 2. Use `distinct` to find the different values of the `alive` variable
+
+```{r}
+
+```
+
+- How many distinct values are there? 
+  
+- Are there any missing values?  
+
+## 3. Use `distinct` to find the different values of the `publisher` variable
+
+```{r}
+
+```
+
+- How many distinct values are there? 
+
+- Are there any missing values?  
+
+
+## 4. Create a new object `df_comics` 
+
+- Filter out any missing values for `alive` and `publisher` 
+
+- Select the `alive` and `publisher` variables
+
+- Assign the output to `df_comics`
+
+  
+```{r}
+
+```
+
+# Use the `df_comics` dataset for the rest of the questions 
+
+## 5. Create a contingency table of the variables `alive` and `publisher`
+
+(Hint: look at the code for to create the contingency table for the variables `align` and `id` in the tutorial)
+
+
+```{r}
+
+```
+
+
+* The count of the category with the most observations is________
+  
+* The value of `alive` is __________
+
+* The value of `publisher` is __________
+
+## 6. Create a bar chart with the variable `publisher` 
+
+```{r}
+
+```
+
+## 7. Create a stacked bar chart with the variables `publisher` and `alive`  
+
+* Split the `publisher` bars into the `alive` categories. (Hint: `alive` will be the fill variable)
+
+
+```{r}
+
+```
+
+## 8. Create a side-by-side bar chart of `publisher` by `alive`
+
+```{r}
+
+```
+
+## 9. Create a mosaic plot of `publisher` by `alive`
+
+```{r}
+
+```
+
+* Do the publishers have approximately the same proportions of deceased characters? (yes, no, can't tell)

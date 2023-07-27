@@ -2,14 +2,14 @@ project:
   type: website
 
 website:
-  title: "quarto-blog-template"
+  title: "BUS 320 blog"
   navbar:
     right:
       - about.qmd
-      - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+      - icon: mailbox
+        href: mailto:stanny@sonoma.edu
+      - icon: linkedin
+        href: href: https://www.linkedin.com/in/estanny/
 format:
   html:
     theme: cosmo

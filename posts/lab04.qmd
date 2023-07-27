@@ -1,0 +1,61 @@
+---
+title: "4 - ETL part 2"
+execute: 
+  warning: false
+---
+
+
+
+# Load libraries and data
+
+```{r}
+library(tidyverse)
+library(skimr) #install first()
+swift  <- read_csv("http://bus320-quarto.netlify.app/data/ey_swift.csv")
+```
+
+## Deliverable 4 
+
+
+### Deliverable 4 Code
+```{r}
+
+```
+
+
+
+
+# Deliverable 5a Question Response
+
+
+# Deliverable 5a Code
+```{r}
+
+```
+
+
+# Deliverable 5b Question Response
+
+
+# Deliverable 5b Code
+```{r}
+
+```
+
+
+# Deliverable 5c Question Response
+
+
+# Deliverable 5c Code
+```{r}
+
+```
+
+
+# Deliverable 5d Question Response
+
+
+# Deliverable 5d Code
+```{r}
+
+```

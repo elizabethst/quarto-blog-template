@@ -1,0 +1,113 @@
+---
+title: "9 - Visualization"
+execute: 
+  warning: false
+---
+
+
+
+## Load libraries and data
+
+```{r}
+library(tidyverse)
+library(scales)
+library(ggcharts) # for bar_chart and lollipop_chart
+theme_set(theme_ggcharts()) #set theme of all plots 
+```
+
+## Read the data in 
+
+```{r}
+drug_cos<-  read_csv("https://bus320-quarto.netlify.app/data/drug_cos.csv")
+```
+
+## 1. Glimpse the data
+
+- Use `glimpse` to examine the `drug_cos` dataset
+
+```{r}
+
+```
+
+## 2. Observations for each `name` 
+
+- Use `count` to find the number of observations for each company `name`
+
+```{r}
+
+```
+
+## 3. Observations for each `year`  
+
+- Use `count` to find the number of observations for each `year` 
+
+```{r}
+
+```
+
+
+## 4. Bar chart of 2016 net margin
+
+
+- Use `bar_chart` from the `ggcharts` package create a bar chart of the 2016 `netmargin` 
+
+- Format the y-axis to show the percentage sign
+
+- Eliminate the x- the y-axes labels
+
+- Title the chart "2016 Net Margin for Drug Companies"
+
+```{r}
+
+```
+
+## 5. Bar chart of 2015 roe with highlight
+
+
+- Use `bar_chart` from the `ggcharts` package create a bar chart of the 5 companies with the highest `roe` in 2015 
+
+- Format the y-axis to show the percentage sign
+
+- Eliminate the x- the y-axes labels
+
+- Title the chart: "Top 5 Drug Companies by 2015 ROE" 
+
+- Highlight the bar of the company with the highest `roe` in your chart
+
+```{r}
+
+```
+
+## 6. Lollipop chart of 2015 `ros` with highlight
+
+- Create a `lollipop_chart` of the top 10 companies by 2015 return on sales (`ros`)
+
+- Format the y-axis to show the percentage sign
+
+- Eliminate the x- the y-axes labels
+
+- Title the chart: "Top 10 Drug Companies by 2015 ROS" 
+
+- Highlight the bar of the company with the second highest `ros` in your chart
+
+```{r}
+
+```
+
+## 7. 4 Bar charts for 3 companies for years (2015-2018)
+
+- Use `bar_chart` from the `ggcharts` package create a separate  a bar chart of the `netmargin` for "Pfizer Inc", "Merck & Co Inc" and"Johnson & Johnson"
+
+- Format the y-axis to show the percentage sign
+
+- Eliminate the x- the y-axes labels
+
+- Title the chart: "Net margin for Pfizer, Merck and Johnson & Johnson" 
+
+- See example [here](https://thomas-neitmann.github.io/ggcharts/index.html#bar_chart)
+  - Hint: use `filter` to subset the data for the 3 companies and 4 years
+  - Hint: use the `facet` argument in the `bar_chart` function to create 4 charts
+
+```{r}
+
+```

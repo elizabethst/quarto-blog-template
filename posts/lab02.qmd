@@ -1,0 +1,80 @@
+---
+title: "2 - Data"
+execute: 
+  warning: false
+---
+
+```{r} 
+#| label: load-packages
+#| message: FALSE
+library(tidyverse)
+library(openintro)
+```
+
+
+### Exercise 1
+
+```{r}
+#| label: view-girs-counts
+arbuthnot$girls
+```
+
+
+### Exercise 2
+
+Insert any text here.
+
+```{r}
+#| label: trend-gi
+```
+
+
+### Exercise 3
+
+Insert any text here.
+
+```{r}
+#| label:  plot-prop-boys-arbuthnot
+# Insert code for Exercise 3 here
+```
+
+
+### Exercise 4
+
+Insert any text here.
+
+```{r}
+# label: dim-present
+# Insert code for Exercise 4 here
+```
+
+
+### Exercise 5
+
+Insert any text here.
+
+```{r }
+#| label: count-compare
+# Insert code for Exercise 5 here
+```
+
+
+### Exercise 6
+
+Insert any text here.
+
+```{r}
+#| label: plot-prep-boys-present
+# Insert code for Exercise 6 here
+```
+
+
+### Exercise 7
+
+Insert any text here.
+
+```{r}
+#| label: find-max-total
+
+# Insert code for Exercise 7 here
+```

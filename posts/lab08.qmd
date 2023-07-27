@@ -1,0 +1,127 @@
+---
+title: "8 - Exploratory analysis"
+execute: 
+  warning: false
+---
+
+
+## Work through the tutorial  [Exploring numerical data](https://openintro.shinyapps.io/ims-02-explore-02/) before attempting the lab
+
+
+## Load libraries and data
+
+```{r}
+library(tidyverse)
+library(scales)
+theme_set(theme_minimal())
+```
+
+## Read the data in 
+
+```{r}
+cars <- read_csv('https://bus320-quarto.netlify.app/data/cars.csv')
+```
+
+## 1. Use `glimpse` to examine the `cars` dataset
+
+```{r}
+
+```
+
+## 2. scatterplot 
+
+
+- Create a scatterplot of `msrp` on the x-axis and `weight` on the y-axis
+  
+- Format `msrp` in thousands of dollar 
+
+- Format the `weight` in comma format with suffix "lbs"  (hint: use `labels = comma_format(suffix = "lbs")`) 
+
+- Add main title: "Scatter plot of `msrp` and `weight`"
+
+- Add x-axis title: "Manufacturer suggested retail price"
+
+- Add y-axis title: "Vehicle weight"
+
+```{r}
+
+```
+
+## 3 Dotplot with median
+
+- Create a dotplot of `msrp`
+  
+- Add a line for the median with a color other than black
+
+- Format `msrp` in thousands of dollar 
+
+- Eliminate the y-axis: `scale_y_continuous(labels = NULL)`
+
+- Add main title: "Dotplot  of `msrp` with median"
+
+- Add x-axis title: "Manufacturer suggested retail price"
+
+- Set y-axis title to NULL
+
+```{r}
+
+```
+
+## 4 Histogram with mean
+
+- Create a histogram of `msrp`
+  
+- Add a line for the mean with a color other than black
+
+- Format `msrp` in thousands of dollar 
+
+- Eliminate the y-axis:`scale_y_continuous(labels = NULL)`
+
+- Add main title: "Histogram  of `msrp` with mean"
+
+- Add x-axis title: "Manufacturer suggested retail price"
+
+- Set y-axis title to NULL
+
+```{r}
+
+```
+
+## 5 Density plot with median
+
+- Create a density plot of `msrp`
+  
+- Add a line for the median with a color other than black
+
+- Format `msrp` in thousands of dollar 
+
+- Eliminate the y-axis: `scale_y_continuous(labels = NULL)`
+
+- Add main title: "Density  of `msrp` with median"
+
+- Add x-axis title: "Manufacturer suggested retail price"
+
+- Set y-axis title to NULL
+
+```{r}
+
+```
+
+## 6 Boxplot
+
+- Create a boxplot of `msrp`
+  
+- Format `msrp` in thousands of dollar 
+
+- Eliminate the y-axis:  `scale_y_continuous(labels = NULL)`
+
+- Add main title: "Boxplot of `msrp`"
+
+- Add x-axis title: "Manufacturer suggested retail price"
+
+- Set y-axis title to NULL
+
+```{r}
+
+```
+
