@@ -6,10 +6,10 @@ about:
   links:
     - icon: mailbox
       text: Email
-      href: mailto:stanny@sonoma.edu
+      href: mailto:example@sonoma.edu
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/estanny/
+      href: https://www.linkedin.com/in/example/
 
 ---
 

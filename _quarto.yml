@@ -7,9 +7,9 @@ website:
     right:
       - about.qmd
       - icon: mailbox
-        href: mailto:stanny@sonoma.edu
+        href: mailto: exmaple@sonoma.edu
       - icon: linkedin
-        href: https://www.linkedin.com/in/estanny/
+        href: href: https://www.linkedin.com/in/estanny/
 format:
   html:
     theme: cosmo
