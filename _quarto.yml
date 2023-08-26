@@ -7,7 +7,7 @@ website:
     right:
       - about.qmd
       - icon: mailbox
-        href: mailto: example@sonoma.edu
+        href: mailto:example@sonoma.edu
       - icon: linkedin
         href: https://www.linkedin.com/in/example/
 format:

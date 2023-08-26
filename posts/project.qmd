@@ -1,0 +1,15 @@
+ ### Instructions
+
+- Pick a data set that you are interested in that you can download in csv format. 
+  +[Our world in data](https://ourworldindata.org).
+  * Economic data: [Federal Reserve Bank of St. Louis](https://fred.stlouisfed.org)
+    * [Macro Snapshot](https://stlouisfed.shinyapps.io/macro-snapshot/#home) - interactive dashboard this is built with [Shiny in R](https://shiny.rstudio.com/) 
+  * If you are interested in using a dataset from a different source, please ask me first.   
+  + Put the link to the dataset you will be using in the google sheet linked on Canvas. You can **not** use the same dataset as anyone else. Check the spreadsheet before you select a dataset. 
+
+
+
+
+
+
+
