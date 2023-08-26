@@ -1,4 +1,10 @@
- ### Instructions
+---
+title: "Project"
+execute: 
+  warning: false
+---
+
+### Instructions
 
 - Pick a data set that you are interested in that you can download in csv format. 
   +[Our world in data](https://ourworldindata.org).
