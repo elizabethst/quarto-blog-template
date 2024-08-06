@@ -6,6 +6,8 @@ execute:
 
 # Load libraries and data
 
+**Uncomment lines 15 and 16 (delete the #) so the data files will be available for the post**
+
 ```{r}
 library(tidyverse)
 library(skimr) 
